@@ -21,3 +21,25 @@ Sua utilização é bem simples, para usá-lo, basta inserir o style dentro da p
 ```
 
 Você pode perceber que o texto recebeu o estilo de cor azul, de cara não parece ser algo "poluente", mas ao lotarmos uma página com essa forma, isso complica bastante as manutenções no site.
+
+### CSS na mesma página
+
+Esse tipo de declaração é um pouco diferente da declaração inline, ela é aplicada na mesma página onde estão as tag's a serem estilizadas, o lado positivo é que não precisamos aplicar em cada tag HTML, ficando um pouco mais organizado, mas ainda sim este padrão não é o recomendável. Para trabalhar com essa forma é necessário usar a tag style. Abaixo um exemplo da forma correta.
+
+``` exemplo tag style
+
+<html>
+    <head>
+        <title>Exemplo de uso tag style</title>
+        <style>
+            p{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello World</p>
+    </body>
+</html>
+
+```
