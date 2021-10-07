@@ -6,6 +6,48 @@ Dois anos depois, no dia 12 de Maio de 1998, eles lançaram a recomendação do 
 
 O nível 3 do CSS começou seu desenvolvimento em 1999, sua evolução ainda continua até os dias atuais, chegando na versão CSS3 level 4. Importante destacarmos que o ciclo do CSS está proposto a chegar até o CSS3, não haverá CSS4, e sim algo do tipo: CSS3 level 4, CSS3 level 5 e etc..
 
+## Estrutura do CSS
+
+Para trabalharmos com CSS precisamos a seguinte estrutura:
+
+```Estruutura css
+
+/* este é um comentário css */
+seletor [, seletor2, ...][:pseudo-classe] {
+  propiedade: valor;
+}
+
+```
+
+Uma instrução CSS consiste de um seletor, bloco de declaração. Cada declaração contém uma propriedade e um valor, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;), não é muito complicado de entender srsrsr... Abaixo uma explicação separada sobre seletores, pseudo classes, propriedades e valores 
+
+### Seletores
+
+Os seletores são usados para declarar a quais elementos de marcação o estilo se aplica, uma espécie de expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo específico, ou apenas aqueles elementos que correspondam a um determinado atributo; elementos podem ser combinados, dependendo de como eles são colocados em relação uns aos outros no código de marcação, ou como eles estão aninhados dentro do objeto de documento modelo. 
+
+``` exemplos de seletores
+p{} /*Este é de forma direta no elemento*/
+.classe{} /*Seletor classe é usado um ponto final + nome da classe, algo como: .minhaclasse, ou outro nome. Sua vantagem é a flexibilidade.*/
+#id{} /*o seletor id possui o famoso hashtag, ou, "jogo da velha". Para usar esse seletor, você esecreve o # + nome de sua id, algo como: #minhaid. Sua vantagem é a leitura rápida, mas ao contrário da classe o id não é flexível, tornando assim um seletor de valor único.
+```
+
+### Pseudoclasse 
+
+Pseudoclasse é outra forma de especificação usada em CSS para identificar os elementos de marcação, e, em alguns casos, ações específicas de usuário para o qual um bloco de declaração especial se aplica. Um exemplo frequentemente utilizado é o :hover pseudoclasse que se aplica um estilo apenas quando o usuário 'aponta para' o elemento visível, normalmente, mantendo o cursor do mouse sobre ele. Isto é anexado a um seletor como em a:hover ou #elementid:hover. Outras pseudoclasses e pseudoelementos são, p. ex., :first-line, :visited ou :before. Veja abaixo o exemplo.
+
+``` Exemplo de pseudoclasse
+/*Ao passar o mouse o texto irá mudar de cor*/
+a{
+    color: azul;
+}
+a:hover{
+    color: red;
+}
+
+```
+
+
+
 ## Formas de trabalho com CSS 
 
 Podemos trabalhar com CSS inline, na mesma página com a tag style, ou de forma externa. Veremos abaixo esses exemplos.
