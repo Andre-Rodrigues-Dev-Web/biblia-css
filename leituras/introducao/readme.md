@@ -43,3 +43,13 @@ Esse tipo de declaração é um pouco diferente da declaração inline, ela é a
 </html>
 
 ```
+
+### CSS externo
+
+Como o próprio nome diz, o CSS externo é um arquivo que permiti organizar as responsabilidades entre HTML e CSS, para usar o CSS externo é necessário criar um arquivo de extensão .css, após criado o arquivo você pode importar em seu html com a tag link. Veja o exemplo.
+
+```Exemplo de importação arquivo css
+<link href="meuarquivo.css" rel="stylesheet"/>
+ou
+<link rel="stylesheet" type="text/css" href="meuarquivo.css">
+```
